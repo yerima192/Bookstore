@@ -58,14 +58,19 @@
 
 .image3 {
     width: 100%;
-    height: 300px;
+    /* hauteur auto, tu peux mettre un max si tu veux */
+    max-height: 400px; /* facultatif */
+    overflow: hidden; /* pour éviter le débordement si cover */
 }
 
 .image3 img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto; /* important pour garder les proportions */
+    display: block;
+    border-radius: 0.5rem; /* conserve ton arrondi */
+    object-fit: cover; /* ou 'contain' si tu veux toute l'image visible */
 }
+
 
 .image5 {
     width: 110px;
