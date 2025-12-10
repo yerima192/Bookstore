@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Post</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary position-fixed top-0 start-0 w-100 shadow" style="z-index: 99999;">
+
+        <div class="container-fluid p-0">
+
+            <div class="w-100 d-flex justify-content-between align-items-center py-2 px-3">
+
+
+
+                <h2 class="m-0 fw-bold ">BOOTIN</h2>
+                <div class="d-none d-sm-flex justify-content-center w-100 lienHover ">
+                    <div class="d-flex justify-content-center align-items-center gap-4 py-2">
+                        <a class="nav-link fs-6 fw-bolder  opacity-75" href="./index.html">Home</a>
+                        <a class="nav-link fs-6 fw-bolder text-black opacity-75" href="./shop.html">Shop</a>
+                        <a class="nav-link fs-6 fw-bolder  text-decoration-underline text-danger opacity-75"
+                            href="./post.html">Post</a>
+                        <a class="nav-link fs-6 fw-bolder text-black opacity-75" href="./contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 d-none d-sm-flex p-2">
+                    <div class="position-relative">
+                        <i class="bi bi-heart fs-4 "></i>
+                        <span
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">3</span>
+                    </div>
+                    <div class="border-end border-1 ms-2 border-black" style="height:24px;"></div>
+                    <div class="position-relative">
+                        <i class="bi bi-bookmark fs-4"></i>
+                        <span
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">0</span>
+                    </div>
+                    <div class="border-end border-1 ms-2 border-black" style="height:24px;"></div>
+                    <i class="bi bi-person-fill fs-4"></i>
+                </div>
+
+                <button class="navbar-toggler d-block d-sm-none ms-2 shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mobileMenu2" aria-controls="mobileMenu2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+
+
+            <!-- Menu mobile ligne 2 (≤425px) -->
+            <div class="collapse bg-light w-100 shadow d-sm-none lienHover lienHoverFixed" id="mobileMenu2"
+                style="z-index:9999;">
+                <ul class="navbar-nav py-3 px-3 ">
+                    <li class="nav-item"><a
+                            class="nav-link fs-6 fw-bolder text-decoration-underline text-danger opacity-75 py-2"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./post.html">Post</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <main class="py-5 m-auto p-0">
+        <section class="container-fluid p-0 position-relative noner-top">
+            <img class="img-fluid w-100 py-3" src="./Assets/bg.jpg" alt="">
+
+            <h1 class="position-absolute top-50 start-50 translate-middle text-white fw-bold">
+                Post
+            </h1>
+        </section>
+        <section class="container-fluid py-4">
+            <div class="row">
+
+                <div class="col-12 col-md-5 col-lg-4 mb-4">
+                    <div class="p-3 rounded-3">
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="border-1 p-2 border-secondary border-opacity-50 w-50"
+                                placeholder="Search..." style="outline:none;">
+                            <button class="btn btn-outline-danger bg-danger text-light" type="button">
+                                <i class="bi bi-search fs-5"></i>
+                            </button>
+                        </div>
+
+                        <div class="py-2">
+                            <h3 class="fw-bold">Categories</h3>
+                            <div class="border border-danger" style="width:60px;"></div>
+                            <div class="mt-3">
+                                <h6 class="text-muted lh-lg">Fashion (3)</h6>
+                                <h6 class="text-muted lh-lg">Life Style (7)</h6>
+                                <h6 class="text-muted lh-lg">Men (2)</h6>
+                                <h6 class="text-muted lh-lg">News (13)</h6>
+                                <h6 class="text-muted lh-lg">Travel (16)</h6>
+                            </div>
+                        </div>
+
+                        <div class="py-2">
+                            <h3 class="fw-bold">Recent Posts</h3>
+                            <div class="border border-danger" style="width:60px;"></div>
+
+                            <div class="mt-3">
+
+                                <div class="d-flex gap-3">
+                                    <img src="./Assets/blog.jpg" alt="" class="envelope-image">
+                                    <div>
+                                        <em>May, 30, 2018</em>
+                                        <p class="text-muted">Book news missed this week</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-3">
+                                    <img src="./Assets/blog2.jpg" alt="" class="envelope-image">
+                                    <div>
+                                        <em>May, 30, 2018</em>
+                                        <p class="text-muted">Book news missed for children</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-3">
+                                    <img src="./Assets/blog3.jpg" alt="" class="envelope-image">
+                                    <div>
+                                        <em>May, 30, 2018</em>
+                                        <p class="text-muted">Book news missed this week</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-3 mt-3">
+                                    <img src="./Assets/blog4.jpg" alt="" class="envelope-image">
+                                    <div>
+                                        <em>May, 30, 2018</em>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="py-2">
+                            <h3 class="fw-bold">Archives</h3>
+                            <div class="border border-danger" style="width:60px;"></div>
+                            <div class="mt-3">
+                                <h6 class="text-muted lh-lg">May 2018</h6>
+                                <h6 class="text-muted lh-lg">Avril 2017</h6>
+                                <h6 class="text-muted lh-lg">Decembre 2016</h6>
+                            </div>
+                        </div>
+
+                        <div class="py-2">
+                            <h3 class="fw-bold">Tags</h3>
+                            <div class="border border-danger" style="width:60px;"></div>
+
+                            <div class="row py-4 g-2 text-center">
+
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Classic</span></div>
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Horror</span></div>
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Kids</span></div>
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Men</span></div>
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Trend</span></div>
+                                <div class="col-6 col-md-4 p-3 border couleur-hover1"><span>Woman</span></div>
+
+                            </div>
+                        </div>
+
+                        <div class="image-emation">
+                            <img src="./Assets/Image6.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-7 col-lg-8 text-center mx-auto">
+
+                    <div class="d-flex justify-content-center mb-5">
+                        <div class="grande-image-large">
+                            <img src="./Assets/post.jpg" class="rounded-1 img-fluid" alt="">
+                        </div>
+                    </div>
+
+                    <p class="text-muted text-start">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dicta sunt corrupti est hic,
+                        error vitae quisquam beatae suscipit.
+                    </p>
+
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <img src="./Assets/post.jpg" class="w-100 rounded post-image" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <img src="./Assets/post2.jpg" class="w-100 rounded post-image" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <img src="./Assets/post3.jpg" class="w-100 rounded post-image" alt="">
+                        </div>
+                    </div>
+
+                    <div class="border-bottom py-4 border-1 border-secondary"></div>
+
+                    <div class="d-flex justify-content-between align-items-center py-3">
+                        <div class="text-start">
+                            <span class="text-danger fw-bold">Previous article</span>
+                            <p>Post format audio blogs</p>
+                        </div>
+                        <div class="text-end">
+                            <span class="text-danger fw-bold">Next article</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+
+                    <div class="border-bottom py-2 border-1 border-secondary"></div>
+
+                    <div class="py-3"></div>
+
+                    <div class="my-form">
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control input-bg" id="commentArea" placeholder="Leave a comment here"
+                                style="height: 140px;"></textarea>
+                            <label for="commentArea"><span class="fs-5 text-muted">Comment</span></label>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control input-bg" id="nameInput">
+                                    <label for="nameInput"><span class="fs-5 text-muted">Name</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control input-bg" id="emailInput">
+                                    <label for="emailInput"><span class="fs-5 text-muted">Email</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control input-bg" id="webInput">
+                                    <label for="webInput"><span class="fs-5 text-muted">Website</span></label>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-danger bg-opacity-25 mt-3 p-3 rounded-0 ms-3" style="width:150px;">
+                                Post comment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="container-fluid py-4 mt-auto" style="background-color: #F3F4F6;">
+        <section class="container-fluid p-5 m-auto">
+            <div class="row gy-5">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">Contact Us</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>1998 Wall Street 707, </p>
+                                <p>Washington DC, USA</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-envelope-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>bookmark@domain.com</p>
+                                <p>support@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-telephone-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>(84) 0123 456 789 </p>
+                                <p>(84) 00123 456 789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">Information</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Contact Us</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Site Map</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Privacy Polyicy</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">About Us </a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Customer Service </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">My Account</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Sign In</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Vieuw Cart</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">My Wishlist</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Track My Order </a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Help </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">Instangram</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex gap-4">
+                            <div class="image5">
+                                <img src="./Assets/ins1.png" alt="">
+                            </div>
+                            <div class="image5">
+                                <img src="./Assets/ins2.png" alt="">
+                            </div>
+                            <div class="image5">
+                                <img src="./Assets/ins3.png" alt="">
+                            </div>
+                        </div>
+
+                        <p class="text-danger mt-3">7 Days A Week - 8AM to 5PM</p>
+
+                        <div>
+
+                            <i class="fa-brands fa-facebook-f fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-twitter fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-instagram fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-pinterest-p fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-linkedin-in fs-4 m-2 text-black"></i>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

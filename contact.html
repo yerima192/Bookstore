@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+     <nav class="navbar bg-body-tertiary position-fixed top-0 start-0 w-100 shadow" style="z-index: 99999;">
+
+        <div class="container-fluid p-0">
+
+            <div class="w-100 d-flex justify-content-between align-items-center py-2 px-3">
+
+
+
+                <h2 class="m-0 fw-bold ">BOOTIN</h2>
+                <div class="d-none d-sm-flex justify-content-center w-100 lienHover ">
+                    <div class="d-flex justify-content-center align-items-center gap-4 py-2">
+                        <a class="nav-link fs-6 fw-bolder opacity-75"
+                            href="./index.html">Home</a>
+                        <a class="nav-link fs-6 fw-bolder text-black opacity-75" href="./shop.html">Shop</a>
+                        <a class="nav-link fs-6 fw-bolder text-black opacity-75" href="./post.html">Post</a>
+                         <a class="nav-link fs-6 fw-bolder  text-decoration-underline text-danger opacity-75"
+                            href="./contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 d-none d-sm-flex p-2">
+                    <div class="position-relative">
+                        <i class="bi bi-heart fs-4 "></i>
+                        <span
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">3</span>
+                    </div>
+                    <div class="border-end border-1 ms-2 border-black" style="height:24px;"></div>
+                    <div class="position-relative">
+                        <i class="bi bi-bookmark fs-4"></i>
+                        <span
+                            class="badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">0</span>
+                    </div>
+                    <div class="border-end border-1 ms-2 border-black" style="height:24px;"></div>
+                    <i class="bi bi-person-fill fs-4"></i>
+                </div>
+
+                <button class="navbar-toggler d-block d-sm-none ms-2 shadow-none" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mobileMenu2" aria-controls="mobileMenu2"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+
+
+            <!-- Menu mobile ligne 2 (≤425px) -->
+            <div class="collapse bg-light w-100 shadow d-sm-none lienHover lienHoverFixed" id="mobileMenu2"
+                style="z-index:9999;">
+                <ul class="navbar-nav py-3 px-3 ">
+                    <li class="nav-item"><a
+                            class="nav-link fs-6 fw-bolder text-decoration-underline text-danger opacity-75 py-2"
+                            href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./post.html">Post</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fs-6 fw-bolder text-black opacity-75 py-2"
+                            href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <main class="py-5 m-auto p-0">
+        <section class="container-fluid p-0 position-relative noner-top">
+            <img class="img-fluid w-100" src="./Assets/bg.jpg" alt="Background Image">
+
+            <h1 class="position-absolute top-50 start-50 translate-middle text-white fw-bold text-center fs-1 fs-md-2">
+                Contact Us
+            </h1>
+        </section>
+
+     <div class="container-fluid p-4 p-md-5">
+    <div class="row g-4 ">
+
+        <div class="col-12 col-md-6 col-lg-6">
+            <h2 class="contact-label mb-2">Address</h2>
+            <p>14 LE Gounlburn St, Sydney 1198NSA.</p>
+
+            <h2 class="contact-label mt-3 mb-2">Phone</h2>
+            <p>(+089) 19918989</p>
+
+            <h2 class="contact-label mt-3 mb-2">Email</h2>
+            <p>support@domain.com</p>
+
+            <h2 class="contact-label mt-3 mb-2">Opening time</h2>
+            <p>8:00 AM – 10:00 PM, Sunday Close</p>
+
+            <h2 class="contact-label mt-3 mb-2">Follow us on</h2>
+            <div class="social-icons d-flex gap-3">
+                <i class="fab fa-facebook fs-4"></i>
+                <i class="fab fa-twitter fs-4"></i>
+                <i class="fab fa-instagram fs-4"></i>
+                <i class="fab fa-linkedin fs-4"></i>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6">
+            <div class="ratio ratio-16x9 shadow-sm rounded">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172086.5957863354!2d2.1184614125915187!3d13.371868418112172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11d075640e049f31%3A0x100cb8d915ab5400!2sCodeloccol!5e1!3m2!1sen!2sne!4v1765321335172!5m2!1sen!2sne"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+     <div class="container-fluid p-4 p-md-5 position-relative">
+    <h1 class="fw-bold mb-4 text-center text-lg-start fs-2 fs-md-1">Get in touch</h1>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-8 col-lg-8">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control form-control-lg input-bg1 rounded-0 border-0"
+                        placeholder="Name">
+                </div>
+
+                <div class="col-md-6">
+                    <input type="email" class="form-control form-control-lg input-bg1 rounded-0 border-0"
+                        placeholder="Email">
+                </div>
+
+                <div class="col-12">
+                    <input type="text" class="form-control form-control-lg input-bg1 rounded-0 border-0"
+                        placeholder="Subject">
+                </div>
+
+                <div class="col-12">
+                    <textarea class="form-control form-control-lg input-bg1 rounded-0 border-0"
+                        placeholder="Your Message" rows="6"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-danger btn-lg px-4">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-end">
+            <div class="contact-us-side-text fw-bold text-muted fs-3 noner-verticale">
+                <h1 class="fw-bold text-center text-md-end">CONTACT US</h1>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    </main>
+
+    <footer class="container-fluid py-4 mt-auto" style="background-color: #F3F4F6;">
+        <section class="container-fluid p-5 m-auto">
+            <div class="row gy-5">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5 ">
+                            <h5 class="mb-4 fw-bold">Contact Us</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-geo-alt-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>1998 Wall Street 707, </p>
+                                <p>Washington DC, USA</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-envelope-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>bookmark@domain.com</p>
+                                <p>support@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <i class="bi bi-telephone-fill fs-3 text-black"></i>
+                            <div class="lh-sm">
+                                <p>(84) 0123 456 789 </p>
+                                <p>(84) 00123 456 789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">Information</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Contact Us</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Site Map</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Privacy Polyicy</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">About Us </a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Customer Service </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">My Account</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex flex-column">
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Sign In</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Vieuw Cart</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">My Wishlist</a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Track My Order </a>
+                            <a class="m-2 text-decoration-none text-black lienHover1" href="#">Help </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div>
+                        <div class="d-flex justify-content-center flex-column align-items-start mb-5">
+                            <h5 class="mb-4 fw-bold">Instangram</h5>
+                            <div class="border border-danger t" style="width:60px;"></div>
+                        </div>
+
+                        <div class="d-flex gap-4">
+                            <div class="image5">
+                                <img src="./Assets/ins1.png" alt="">
+                            </div>
+                            <div class="image5">
+                                <img src="./Assets/ins2.png" alt="">
+                            </div>
+                            <div class="image5">
+                                <img src="./Assets/ins3.png" alt="">
+                            </div>
+                        </div>
+
+                        <p class="text-danger mt-3">7 Days A Week - 8AM to 5PM</p>
+
+                        <div>
+
+                            <i class="fa-brands fa-facebook-f fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-twitter fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-instagram fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-pinterest-p fs-4 m-2 text-black"></i>
+                            <i class="fa-brands fa-linkedin-in fs-4 m-2 text-black"></i>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
